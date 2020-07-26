@@ -13,6 +13,7 @@ try:
 
         try:
             #print('\x1b[1;30;40m[-] ' + sub)
+            origin={'Origin':evil}
             x = requests.head(sub,headers=origin,timeout=(5,5))
             header=x.headers
             code=x.status_code
